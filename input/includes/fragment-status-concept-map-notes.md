@@ -1,17 +1,16 @@
 The Finnish logical model for appointments includes a code set for appointment statuses that
 differs from the FHIR
-[Appointment.status](https://hl7.org/fhir/R4B/appointment-definitions.html#Appointment.status)
-values.
+[Appointment.status](https://hl7.org/fhir/R4B/appointment-definitions.html#Appointment.status) values.
 
 The Finnish logical model is more detailed when the service is being planned, and separates between
-states where the need fo a service has been identified but no service provider has yet been
+states where the need for a service has been identified but no service provider has yet been
 identified
 ([#1, Suunniteltu](https://koodistopalvelu.kanta.fi/codeserver/pages/code-view-page.xhtml?conceptCodeKey=101027618)),
 and when the service provider has been selected
 ([#2, Tilattu](https://koodistopalvelu.kanta.fi/codeserver/pages/code-view-page.xhtml?conceptCodeKey=101027619)).
 
-The FHIR specification uses the Appoinment resource to track information on scheduling and for
-administrative purposes, and in general for prepapring for the encounter. In FHIR, the Encounter
+The FHIR specification uses the Appointment resource to track information on scheduling and for
+administrative purposes, and in general for preparing for the encounter.
 resource is used to track the encounter, and any clinically relevant information (see
 [Appointment Statuses and Encounters](https://hl7.org/fhir/R4B/appointment.html#statuses)). In
 FHIR, when an encounter starts, its status is tracked with the
